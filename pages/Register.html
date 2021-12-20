@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Payroll</title>
+    <link rel="stylesheet" type="text/css" href="..\css\style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="topbar">
+            <img src="https://img.icons8.com/external-line-colors-royyan-wijaya/64/000000/external-employee-bussiness-and-offices-six-line-colors-royyan-wijaya-2.png" class="" width="100" height="100"/>
+           <!-- <img src="../assets/download.png" /> -->
+           <h3>Employee Payroll</h3>
+        </div>
+          <div class="container">
+            <p id="message">*Please fill out every field</p>
+            <h1>Employee Payroll Form</h1>
+            <form id="employeeForm"  action="Register.html" method="post" target="">
+                <div class="form-row">
+                    <label id="form-row">Name</label>
+                <input name="name" id="name" type="text" class="user-input" value="" required>
+                </div>
+                <div class="form-row">
+                    <label id="form-row">Profile image</label>
+                <img name="empImg" id="empImg" class="empImg" src="../assets/user.jpg" value="" required/>
+                </div>
+                <div class="form-row">
+                    <label id="form-row">Gender</label>
+                <input name="gender" id="gender" type="checkbox" class="user-input" value="M" required=requried>Male
+                <input name="gender" id="gender" type="checkbox" class="user-input" value="F" >Female
+                </div>
+                <div class="form-row">
+                    <label id="form-row">Department</label>
+                <input name="department" id="department1" type="checkbox" class="user-input" value="Engineer"  >Engineer
+                <input name="department" id="department2" type="checkbox" class="user-input" value="Sales" >Sales
+                <input name="department" id="department3" type="checkbox" class="user-input" value="HR" >HR
+                <input name="department" id="department4" type="checkbox" class="user-input" value="Finance" >Finance
+                <input name="department" id="department5" type="checkbox" class="user-input" value="Others" >Others
+                </div>
+                <div class="form-row">
+                    <label id="form-row">Salary</label>
+                    <select name="salary" id="salary" class="user-input" value=""  required >
+                        <option value="Less Than 2 Lac">Less Than 2 Lac</option>
+                        <option value="Between 3-5 Lac">Between 3-5 Lac</option>
+                        <option value="More Than 5 Lac">More Than 5 Lac</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="date">Start date</label>
+                    <span id="date-format">(DD-MM-YYYY):</span>
+                    <input type="date" aria-describedby="date-format" min="2021-03-01" max="2031-01-01" name="startdate" id="startdate" class="user-input" value="" required/>
+                   
+                </div>
+                <div class="form-row"><label id="form-row">Notes</label>
+                    <textarea name="notes" id="notes" class="user-input" rows="10" maxlength="1500" required></textarea>
+                </div>
+                
+                <p>*Please fill out every field</p>
+                <div class="form-row">
+                    <input type="button" onclick="CancelFields();" class="cancel" value="Cancel">
+                    <input type="button" value="Reset" class="reset" onclick="ClearFields();">
+                    <input type="button" value="Submit" id="submit" class="submit" onclick="return submitForm()">
+                </div>
+                </div>
+                
+        </form>
+          </div>
+    </div>
+    
+      
+      <script src="../js/employee.js"></script>
+</body>
+</html>
