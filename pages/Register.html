@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employee Payroll</title>
     <link rel="stylesheet" type="text/css" href="..\css\style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     <div class="mainContainer">
@@ -21,7 +19,7 @@
               <div class="form-container">
             <p id="message">*Please fill out every field</p>
             <h1>Employee Payroll Form</h1>
-            <form id="employeeForm"  action="Register.html" method="post" target="">
+            <form id="employeeForm"  action="DisplayEmp.html" method="post" target="">
                 <div class="field-box">
                     <div class="field-label"><label id="">Name</label></div>
                 <div class="field-input"><input name="name" id="name" type="text"  value="" class="user-input" required /></div>
@@ -63,13 +61,14 @@
                     <div class="date-input">
                         <select name="startdate" id="startdate" class="user-input" value=""  required >
                             <option value="0">Day</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
+                            <option value="31">31</option>
+                            <option value="30">30</option>
+                            <option value="22">22</option>
                         </select>
                         <select name="startdate" id="startdate" class="user-input" value=""  required >
                             <option value="0">Month</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
+                            <option value="12">12</option>
+                            <option value="11">11</option>
                         </select>
                         <select name="startdate" id="startdate" class="user-input" value=""  required >
                             <option value="0">Year</option>

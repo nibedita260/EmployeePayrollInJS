@@ -29,7 +29,7 @@ body,html{
     top: 0px;
     left: 0px;
     width: 100%;
-    height: 105px;
+    height: 88px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     opacity: 1;
 }
@@ -61,7 +61,7 @@ body,html{
     font-family: 'Roboto', sans-serif;
     opacity: 1;
     display: flex;
-   
+    background-color: #eee;
     justify-content: center;
     align-items: center;
 }
@@ -293,3 +293,90 @@ input[type=radio] {
     }
 }
 }
+    /*  Display Employee Details       */
+.emp-container{
+    padding: 20px;
+    width: 90%;
+    height: 70px;
+    display: flex;
+}
+.empTitle{
+    width: 70%;display: inline-flex;
+}
+.search-add-user{
+    width: 20%;
+    display: flex;
+}
+.empTitle h1{
+    font: normal normal bold 28px/37px Roboto;
+    letter-spacing: 0px;
+    color: #42515F;
+    text-transform: capitalize;
+    font-family: system-ui;
+    opacity: 1;
+}
+.search-add-user i{
+    font-size: 18px;
+}
+.btn-icon{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 3px #00000029;
+    border-radius: 28px;
+    opacity: 1;
+    margin: 20px 0px 0px 0px;
+    width: 55%;
+    border: 1px saddlebrown;
+    height: 40px;
+    
+}
+.fa-plus:before {
+    content: "\f067";
+    padding-right: 8px;
+}
+.btn-add-user{
+    color: #f7f7f7;
+    border: 1px saddlebrown;
+    text-align: center;
+    width: 100%;
+    margin: 20px;
+    height: 35px;
+    background: #82A70C 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    font: normal normal normal 22px/29px Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.empDetails{
+    padding: 50px;
+    width: 90%;
+    height: 100%;
+    display: grid;
+}
+.emp-heading{
+    color: #fff;
+    background: #42515F 0% 0% no-repeat padding-box;
+    border-radius: 3px 3px 0px 0px;
+    opacity: 1;
+}
+.edit-delete-user {
+    font-size: 18px;
+}
+.btn-delete{
+    border: 1px saddlebrown;
+    opacity: 1;
+}
+.btn-edit {
+    border: 1px saddlebrown;
+    opacity: 1;
+}
+.emp-data{
+    width: 90%;display: table-row;
+    height: 100%;
+    text-align: left;
+font: normal normal normal 16px/21px Roboto;
+letter-spacing: 0px;
+color: #3D3D3D;
+opacity: 1;
+}
+
