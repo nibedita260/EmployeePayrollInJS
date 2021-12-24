@@ -55,31 +55,31 @@ function submitForm() {
 
     //validate
     if (name == "") {
-        window.alert("Please enter your name.");
+        //window.alert("Please enter your name.");
         nameErr="Please enter your name";
         error=nameErr;
         return false;
     }
     if (genderCheck == null) {
-        window.alert("Please choose gender.");
+        //window.alert("Please choose gender.");
         genderErr="Please choose gender";
         error=genderErr;
         return false;
     }
     if (departmentCheck == 0) {
-        window.alert("Please choose department.");
+        //window.alert("Please choose department.");
         departmentErr="Please choose department";
         error=departmentErr;
         return false;
     }
     if (salary == null) {
-        window.alert("Please Fill salary Field.");
+        //window.alert("Please Fill salary Field.");
         salaryErr="Please Fill salary Field.";
         error=salaryErr;
         return false;
     }
     if (startdate == '') {
-        window.alert("Please Fill startdate Field.");
+        //window.alert("Please Fill startdate Field.");
         salaryErr="Please Fill startdate Field.";
         error=startdateErr;
         return false;
