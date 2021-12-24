@@ -17,34 +17,39 @@
         </div>
           <div class="container">
               <div class="form-container">
-            <p id="message">*Please fill out every field</p>
+            
             <h1>Employee Payroll Form</h1>
-            <form id="employeeForm"  action="DisplayEmp.html" method="post" target="">
+            <div id="employeeForm"  method="post" target="">
                 <div class="field-box">
                     <div class="field-label"><label id="">Name</label></div>
                 <div class="field-input"><input name="name" id="name" type="text"  value="" class="user-input" required /></div>
                 </div>
                 <div class="field-box ">
                     <div class="field-label"><label id=" ">Profile image</label></div>
-                <div class="field-input"><input name="gender" id="gender" type="radio" class=" user-input" value="M" required=requried /><img name="empImg" id="empImg" class="empImg" src="../assets/user.jpg" value="" required/>
-                    <input name="gender" id="gender" type="radio" class="user-input" value="M" required=requried /><img name="empImg" id="empImg" class="empImg" src="../assets/user.jpg" value="" required/>
-                    <input name="gender" id="gender" type="radio" class=" user-input" value="M" required=requried /><img name="empImg" id="empImg" class="empImg" src="../assets/user.jpg" value="" required/>
-                    <input name="gender" id="gender" type="radio" class=" user-input" value="M" required=requried /><img name="empImg" id="empImg" class="empImg" src="../assets/user.jpg" value="" required/>
+                <div class="">
+                    <input name="profileImg" id="profileImg" type="radio" class="user-input" value="M" required=requried />
+                    <img name="empImg" id="empImg" class="empImg" src="../assets/user2.webp" value="" required/>
+                    <input name="profileImg" id="profileImg" type="radio" class="user-input" value="M" required=requried />
+                    <img name="empImg" id="empImg" class="empImg" src="../assets/user1.jpg" value="" required/>
+                    <input name="profileImg" id="profileImg" type="radio" class=" user-input" value="M" required=requried />
+                    <img name="empImg" id="empImg" class="empImg" src="../assets/user2.webp" value="" required/>
+                    <input name="profileImg" id="profileImg" type="radio" class=" user-input" value="M" required=requried />
+                    <img name="empImg" id="empImg" class="empImg" src="../assets/user1.jpg" value="" required/>
                 </div>
                 </div>
                 <div class="field-box">
                     <div class="field-label"><label id=" ">Gender</label></div>
                 <div class="">
-                    <input name="gender" id="gender" type="radio" class=" user-input" value="M" required=requried /> Male
-                    <input name="gender" id="gender" type="radio" class="user-input" value="F" />Female</div>
+                    <input name="gender" id="gender" type="radio" class=" user-input" value="M" required=requried /> <span>Male</span>
+                    <input name="gender" id="gender" type="radio" class="user-input" value="F" /><span>Female</span></div>
                 </div>
                 <div class="field-box ">
                     <div class="field-label"><label id=" ">Department</label></div>
-                <div class="field-input"><input name="department" id="department1" type="checkbox" class="user-input" value="Engineer"  >Engineer
-                    <input name="department" id="department2" type="checkbox" class="user-input" value="Sales" >Sales
-                    <input name="department" id="department3" type="checkbox" class="user-input" value="HR" >HR
-                    <input name="department" id="department4" type="checkbox" class="user-input" value="Finance" >Finance
-                    <input name="department" id="department5" type="checkbox" class="user-input" value="Others" >Others</div>
+                <div class=""><input name="department" id="department1" type="checkbox" class="user-input" value="Engineer" /><span>Engineer</span>
+                    <input name="department" id="department2" type="checkbox" class="user-input" value="Sales" ><span>Sales</span>
+                    <input name="department" id="department3" type="checkbox" class="user-input" value="HR" ><span>HR</span>
+                    <input name="department" id="department4" type="checkbox" class="user-input" value="Finance" ><span>Finance</span>
+                    <input name="department" id="department5" type="checkbox" class="user-input" value="Others" ><span>Others</span></div>
                 </div>
                 <div class=" field-box">
                     <div class="field-label"><label id=" ">Salary</label></div>
@@ -87,7 +92,8 @@
                     <div class="btn-inputs"><input type="button" value="Reset" class=" reset" onclick="ClearFields();">
                         <input type="button" value="Submit" id="submit" class="submit" onclick="return submitForm()"></div>
                 </div>
-            </form>
+                <p id="message">*Please fill out every field</p>
+            </div>
             </div>
         </div>
     </div>
