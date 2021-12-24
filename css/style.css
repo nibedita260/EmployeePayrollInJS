@@ -86,9 +86,16 @@ padding: 20px;
 }
 .field-label{
     width: 15%;
+    font: normal normal bold 18px/24px Roboto;
+letter-spacing: 0px;
+color: #42515F;
+opacity: 1;
 }
 .field-input{
     width: 85%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    
+    opacity: 1;
 }
 .date-input{
     width: 80%;
@@ -140,16 +147,16 @@ padding: 20px;
     border-radius: 5px;
 }
 .user-input{
+    border: 1px solid #BDBDBD;
+    border-radius: 3px;
     text-align: left;
-    font: normal normal normal 18px/24px Roboto;
+    font: normal normal bold 18px/24px Roboto;
     letter-spacing: 0px;
-    color: #42515F;
     opacity: 1;
-    padding: 0px 30px 15px 5px;
+    padding: 15px 15px 15px 15px;
     flex-direction: column;
     border-radius: 5px;
     width: 85%;
-    text-decoration: indigo;
     text-align: justify;
     margin: 0px 10px 0px 10px;
 }
@@ -158,10 +165,9 @@ padding: 20px;
     display:inline-flex;
 }
 .empImg{
-    margin: 0px 20px 0 20px;
-    width: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50px;
-    
 }
 #form-row{
     flex-direction: column;
@@ -179,11 +185,23 @@ opacity: 1;
 input#gender {
     width: 20px;
 }
-input[type=radio] {
+input[type=radio][name=empImg] {
+    border: 0px;
+    width: 100px;
+    vertical-align: super;
+    height: 1em;
+    background: #DEDEDE 0% 0% no-repeat padding-box;
+    border: 1px solid #B4B4B4;
+    opacity: 1;
+}
+input[type=radio][name=gender] {
     border: 0px;
     width: 100px;
     vertical-align: middle;
-    height: 2em;
+    height: 1em;
+    background: #DEDEDE 0% 0% no-repeat padding-box;
+    border: 1px solid #B4B4B4;
+    opacity: 1;
 }
 .checkbox-round {
     width: 20px;
@@ -252,9 +270,10 @@ input[type=radio] {
         border-radius: 5px;
     }
     .user-input{
-        text-align: left;
-        font: normal normal normal 18px/24px Roboto;
-        letter-spacing: 0px;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+border: 1px solid #BDBDBD;
+border-radius: 3px;
+opacity: 1;
         color: #42515F;
         opacity: 1;
         width: 73%;
@@ -272,6 +291,11 @@ input[type=radio] {
     }
     .field-label{
         width: 20%;
+        text-align: left;
+font: normal bolder 18px/24px Roboto;
+letter-spacing: 0px;
+color: #42515F;
+opacity: 1;
     }
     .user-input#department1, .user-input#department2, .user-input#department3, .user-input#department4, .user-input#department5 {
         width: 24%;
@@ -296,12 +320,12 @@ input[type=radio] {
     /*  Display Employee Details       */
 .emp-container{
     padding: 20px;
-    width: 90%;
+    width: 80%;
     height: 70px;
     display: flex;
 }
 .empTitle{
-    width: 70%;display: inline-flex;
+    width: 80%;display: inline-flex;
 }
 .search-add-user{
     width: 20%;
@@ -348,35 +372,94 @@ input[type=radio] {
     opacity: 1;
 }
 .empDetails{
-    padding: 50px;
-    width: 90%;
+    width: 80%;
     height: 100%;
     display: grid;
 }
 .emp-heading{
-    color: #fff;
+    /* color: #fff;
     background: #42515F 0% 0% no-repeat padding-box;
     border-radius: 3px 3px 0px 0px;
-    opacity: 1;
+    opacity: 1; */
 }
 .edit-delete-user {
     font-size: 18px;
 }
 .btn-delete{
     border: 1px saddlebrown;
-    opacity: 1;
+    /* background: #658292 0% 0% no-repeat padding-box;
+opacity: 1; */
 }
 .btn-edit {
     border: 1px saddlebrown;
-    opacity: 1;
+    /* background: #658292 0% 0% no-repeat padding-box;
+opacity: 1; */
 }
 .emp-data{
-    width: 90%;display: table-row;
+    opacity: 1;
+    width: 90%;
+    display: table-row;
     height: 100%;
+    text-align: center;
+    font: normal normal normal 16px/21px Roboto;
+    letter-spacing: 0px;
+    color: #3D3D3D;
+    opacity: 1;
+    size:16px 
+}
+.emp-row{
     text-align: left;
-font: normal normal normal 16px/21px Roboto;
+}
+.emp-row img{
+opacity: 1;
+width: 40px;border-radius: 50px;
+vertical-align: middle;
+height: 40px;
+margin-right: 5px;
+}
+table, th, td {
+
+    
+    border-collapse: collapse;
+    
+    }
+    
+    th, td {
+    
+    padding: 10px;
+    
+    }
+    
+    th {
+    
+    background-color: #42515F;
+font: normal normal medium 18px/24px Roboto;
 letter-spacing: 0px;
+color: #FFFFFF;
+text-align: left;
+text-transform: uppercase;
+opacity: 1;
+    
+    }
+    
+    td {
+    
+    background-color: #fff;
+font: normal bolder 16px/21px Roboto;
+letter-spacing: 0px;
+border-bottom: 1px solid #BDBDBD;
 color: #3D3D3D;
 opacity: 1;
-}
-
+height: 21px;
+    
+    }
+    .dept-btn{
+        background: #E9FEA5 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 3px #00000029;
+    border-radius: 28px;
+    opacity: 1;
+    width: 57px;
+    border: 1px saddlebrown;
+    height: 26px;
+    }
+    
