@@ -203,7 +203,6 @@ input[type=radio][name=profileImg] {
     opacity: 1;
 }
 input[type=radio][name=gender] {
-<<<<<<< HEAD
     border: 0px;
     width: 100px;
     vertical-align: middle;
@@ -213,8 +212,6 @@ input[type=radio][name=gender] {
     opacity: 1;
 }
 input[type=checkbox][name=department] {
-=======
->>>>>>> UC-ValidateEmployee
     border: 0px;
     width: 100px;
     vertical-align: middle;
@@ -222,18 +219,6 @@ input[type=checkbox][name=department] {
     background: #DEDEDE 0% 0% no-repeat padding-box;
     border: 1px solid #B4B4B4;
     opacity: 1;
-<<<<<<< HEAD
-=======
-}
-input[type=checkbox][name=department] {
-    border: 0px;
-    width: 100px;
-    vertical-align: middle;
-    height: 1em;
-    background: #DEDEDE 0% 0% no-repeat padding-box;
-    border: 1px solid #B4B4B4;
-    opacity: 1;
->>>>>>> UC-ValidateEmployee
 }
 .checkbox-round {
     width: 20px;
@@ -466,7 +451,6 @@ table, th, td {
     
     background-color: #42515F;
 font: normal normal medium 18px/24px Roboto;
-<<<<<<< HEAD
 letter-spacing: 0px;
 color: #FFFFFF;
 text-align: left;
@@ -480,21 +464,6 @@ opacity: 1;
     background-color: #fff;
 font: normal bolder 16px/21px Roboto;
 letter-spacing: 0px;
-=======
-letter-spacing: 0px;
-color: #FFFFFF;
-text-align: left;
-text-transform: uppercase;
-opacity: 1;
-    
-    }
-    
-    td {
-    
-    background-color: #fff;
-font: normal bolder 16px/21px Roboto;
-letter-spacing: 0px;
->>>>>>> UC-ValidateEmployee
 border-bottom: 1px solid #BDBDBD;
 color: #3D3D3D;
 opacity: 1;
@@ -517,9 +486,6 @@ height: 21px;
     i.fa.fa-pencil {
         color: #658292;
         margin-left: 10px;
-<<<<<<< HEAD
-    }
-=======
     }
     .field-box small {
         color: var(--error-color);
@@ -546,4 +512,3 @@ height: 21px;
         font-size: 14.5px;
         margin-top: 5px;
       }
->>>>>>> UC-ValidateEmployee

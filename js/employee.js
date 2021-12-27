@@ -46,52 +46,6 @@
 //         }
 //     }
     
-<<<<<<< HEAD
-    var name=document.getElementById("name").value;
-    var genderCheck=document.querySelector("input[type=radio][name=gender]:checked");
-    var departmentCheck=document.querySelectorAll("input[type=checkbox][name=department]:checked").length;
-    var salary=document.getElementById("salary").value;
-    var startdate=document.getElementById("startdate").value ;
-    var notes=document.getElementById("notes").value;
-
-    //validate
-    if (name == "") {
-        //window.alert("Please enter your name.");
-        nameErr="Please enter your name";
-        error=nameErr;
-        return false;
-    }
-    if (genderCheck == null) {
-        //window.alert("Please choose gender.");
-        genderErr="Please choose gender";
-        error=genderErr;
-        return false;
-    }
-    if (departmentCheck == 0) {
-        //window.alert("Please choose department.");
-        departmentErr="Please choose department";
-        error=departmentErr;
-        return false;
-    }
-    if (salary == null) {
-        //window.alert("Please Fill salary Field.");
-        salaryErr="Please Fill salary Field.";
-        error=salaryErr;
-        return false;
-    }
-    if (startdate == '') {
-        //window.alert("Please Fill startdate Field.");
-        salaryErr="Please Fill startdate Field.";
-        error=startdateErr;
-        return false;
-    }
-    var todaysDate = new Date();
-
-    function convertDate(date) {
-      var yyyy = date.getFullYear().toString();
-      var mm = (date.getMonth()+1).toString();
-      var dd  = date.getDate().toString();
-=======
 //     var name=document.getElementById("name").value;
 //     var genderCheck=document.querySelector("input[type=radio][name=gender]:checked");
 //     var departmentCheck=document.querySelectorAll("input[type=checkbox][name=department]:checked").length;
@@ -136,7 +90,6 @@
 //       var yyyy = date.getFullYear().toString();
 //       var mm = (date.getMonth()+1).toString();
 //       var dd  = date.getDate().toString();
->>>>>>> UC-ValidateEmployee
     
 //       var mmChars = mm.split('');
 //       var ddChars = dd.split('');
@@ -226,7 +179,6 @@ document.getElementById("submit").addEventListener("click", function(event){
 
     checkRequired([name, salary, startdate, notes]);
 }); 
-
 
 
 
