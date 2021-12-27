@@ -487,3 +487,28 @@ height: 21px;
         color: #658292;
         margin-left: 10px;
     }
+    .field-box small {
+        color: var(--error-color);
+        position: absolute;
+        bottom: 48%;
+        left: 25%;
+        visibility: hidden;
+    }
+    
+    .field-box.error small{
+        visibility: visible;
+    }
+    .field-input.error small {
+        visibility: visible;
+    }
+    .field-input.error input {
+      border-color: var(--error-color);
+    }
+    .field-input.success input {
+      border-color: var(--success-color);
+    }
+    .error {
+        color: red;
+        font-size: 14.5px;
+        margin-top: 5px;
+      }
